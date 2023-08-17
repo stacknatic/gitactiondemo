@@ -7,14 +7,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # - uses: actions/checkout@v2
-      - uses: actions/new
+      - uses: actions/checkout@v2
+      # - uses: actions/new
 
       - name: Run a one-line script
         run: echo "Hello, CI/CD!"
 
       #- name: Simulate an error
-       run: echo "About to fail" ; exit 1
+      #  run: echo "About to fail" ; exit 1
 
       - name: Another greeting
         run: echo "Hello, CI/CD again!"
